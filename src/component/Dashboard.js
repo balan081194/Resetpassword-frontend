@@ -7,7 +7,7 @@ function Dashboard() {
     const navigate = useNavigate()
     axios.defaults.withCredentials = true;
     useEffect(()=> {
-        axios.get('http://localhost:5000/dashboard')
+        axios.get('resetpassword-backend-api.vercel.app/dashboard')
         .then(res => {
             console.log("dashboad: " + res.data);
             if(res.data === "Success") {
