@@ -11,7 +11,7 @@ function Signup() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:5000/register', {name, email, password})
+        axios.post('resetpassword-backend-api.vercel.app/register', {name, email, password})
         .then(res => {
             navigate('/login')
         }).catch(err => console.log(err))
